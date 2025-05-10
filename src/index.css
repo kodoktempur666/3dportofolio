@@ -433,23 +433,21 @@ section {
 .marquee-box {
   display: flex;
   align-items: center;
-  width: 200%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
+  width: max-content; /* Otomatis menyesuaikan panjang konten */
   animation: marquee 60s linear infinite;
 }
 .marquee-item {
-  float: left;
+  margin-right: 2rem; /* Jarak antar item (opsional) */
 }
 @keyframes marquee {
   0% {
-    left: 0;
+    transform: translateX(0%);
   }
   100% {
-    left: -100%;
+    transform: translateX(-50%);
   }
 }
+
 /* marquee end */
 
 .card {
@@ -477,7 +475,7 @@ section {
       from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
       white,
-      #ffffff00 100deg
+      #e5030300 100deg
     );
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
