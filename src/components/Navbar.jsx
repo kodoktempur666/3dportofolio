@@ -39,10 +39,14 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-
         </nav>
 
-        <a href="#contact" className="contact-btn group">
+        <a
+          href="https://wa.me/6287830735634" // Ganti dengan nomor WhatsApp kamu
+          className="contact-btn group"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="inner">
             <span>Contact me</span>
           </div>

@@ -4,8 +4,8 @@ const navLinks = [
     link: "#work",
   },
   {
-    name: "Experience",
-    link: "#experience",
+    name: "Education",
+    link: "#education",
   },
   {
     name: "Skills",
@@ -34,37 +34,37 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/figma.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/images/logos/atlas.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/hostinger.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/vercel.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/imagekit.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/firebase.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/drizzle.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/neon.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/upstash.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/github.png",
   },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
+    {
+    imgPath: "/images/logos/supabase.png",
   },
 ];
 
@@ -111,34 +111,77 @@ const techStackImgs = [
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
-    modelPath: "/models/php5.glb",
-    scale: 0.8,
+    name: "JavaScript",
+    modelPath: "/models/js.glb",
+    scale: 0.5,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
+    name: "MongoDB",
+    modelPath: "/models/mongo.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Node JS",
+    modelPath: "/models/node.glb",
     scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
+  },
+    {
+    name: "Next JS",
+    modelPath: "/models/nextjs.glb",
+    scale: 1,
+    rotation: [0, 1, 0],
+  },
+    {
+    name: "Python",
+    modelPath: "/models/python-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+      {
+    name: "PHP",
+    modelPath: "/models/php.glb",
+    scale: 0.8,
+    rotation: [0, 1, 0],
+  },
+
+          {
+    name: "Flutter",
+    modelPath: "/models/flutter.glb",
+    scale: 2.5,
+    rotation: [0, 0, 0],
+  },
+            {
+    name: "Mysql",
+    modelPath: "/models/mysql.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+              {
+    name: "Postgres",
+    modelPath: "/models/postgre.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+                {
+    name: "Three JS",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.06,
+    rotation: [0, 0, 0],
   },
 ];
 
@@ -146,9 +189,9 @@ const expCards = [
   {
     review:
       "As a Research and Entrepreneurial University campus, Telkom University plays an active role in the development of technology, science, and arts based on technology and information. Producing various research & innovations that are beneficial to people's lives.",
-    imgPath: "/images/telu.png",
+    imgPath: "/images/aa.png",
     logoPath: "/images/telu.png",
-    title: "Software Engineering",
+    title: "Software Engineering Major",
     date: "October 2022 - Present",
     responsibilities: [
       "Developed a web application with PHP and MySQL.",
@@ -158,30 +201,18 @@ const expCards = [
   },
   {
     review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+      "Hacktiv8 is a bootcamp or intensive training program that aims to transform beginners into work-ready digital talents, especially in the technology sector.",
+    imgPath: "/images/hacktiv8-dark.png",
+    logoPath: "/images/hacktiv-logo.png",
+    title: "Frontend React JS Bootcamp",
+    date: "9 September 2022 - 31 December 2022",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Learning the fundamentals of React.js.",
+      "Learning how to use tools for frontend development.",
+      "Building capstone projects with React.",
     ],
   },
-  {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
-  },
+
 ];
 
 const expLogos = [
@@ -248,18 +279,17 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    url: "https://www.instagram.com/firmnmlnaaa/",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/firman-maulana-320297252/",
+  },
+    {
+    name: "github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/kodoktempur666",
   },
 ];
 

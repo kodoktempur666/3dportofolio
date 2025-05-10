@@ -37,7 +37,6 @@ const ShowCaseSection = () => {
         }
       );
     });
-    
   }, []);
 
   return (
@@ -47,14 +46,36 @@ const ShowCaseSection = () => {
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde" />
+              <img src="/images/projek/bs.png" alt="Ryde" />
             </div>
             <div className="text-content">
-              <h2>On-Demand Rides Made simple powerfull</h2>
+              <h2>Bank Sampah Desa Salem</h2>
               <p className="text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, placeat.
+                Website for bank sampah desa salem. The website is used by the
+                waste collector for collecting waste from desa salem and payment
+                for waste. Build with PHP native, Bootstrap and MySQL.
               </p>
+              <a
+                href="https://bssalem.com"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -62,40 +83,113 @@ const ShowCaseSection = () => {
           <div className="project-list-wrapper" ref={project2Ref}>
             <div className="image-wrapper bg-[#2D3240]">
               <img
-                src="/images/project2.png"
+                src="/images/projek/lib.png"
                 alt="Library Management Platform"
               />
             </div>
             <div className="text-content">
-              <h2>On-Demand Rides Made simple powerfull</h2>
+              <h2>Library Management Platform</h2>
               <p className="text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, placeat.
+                A website for library that can be used to manage books and
+                users. Build with Next JS, Tailwind CSS, and Shadcn UI for
+                frontend. Postgresql and Drizzle ORM for backend.
               </p>
+              <a
+                href="https://github.com/kodoktempur666/library.git"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
             </div>
           </div>
           <div className="project-list-wrapper" ref={project3Ref}>
             <div className="image-wrapper bg-[#2D3240]">
-              <img src="/images/project3.png" alt="YC Directory" />
+              <img src="/images/projek/cell.png" alt="YC Directory" />
             </div>
             <div className="text-content">
-              <h2>On-Demand Rides Made simple powerfull</h2>
+              <h2>Muria Cellular Technology</h2>
               <p className="text-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, placeat.
+                Company profile website for Muria Cellular Technology. Build
+                with PHP native, Bootstrap and MySQL. Including admin panel for
+                content management.
               </p>
+              <a
+                href="https://github.com/kodoktempur666/muriacell.git"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="showcaselayout mt-10">
+          {/* LEFT */}
+
+          {/* right */}
+          <div className="project-list-wrapper" ref={project2Ref}>
+            <div className="text-content">
+              <h2>Subscription-API</h2>
+              <p className="text-content">
+                API for subscription reminder. Build with Express JS, Node JS,
+                and MongoDB. With JWT authentication and Node Mailer for sending
+                email.
+              </p>
+              <a
+                href="https://github.com/kodoktempur666/subscription-API.git"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="w-full max-w-4xl h-[300px] my-10">
-          <iframe
-            src="https://wakatime.com/share/@4213cd84-4eb2-440e-989d-ae1aa2511760/f69fce98-ff11-4657-8b0d-656f13411753.svg"
-            className="w-full h-full"
-            frameBorder="0"
-            title="Wakatime Stats"
-          />
-        </div> */}
     </section>
   );
 };

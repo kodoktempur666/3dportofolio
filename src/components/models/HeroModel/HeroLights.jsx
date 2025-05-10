@@ -4,18 +4,18 @@ const HeroLights = () => (
   <>
     {/* lamp's light */}
     <spotLight
-      position={[2, 5, 6]}
-      angle={0.15}
-      penumbra={0.2}
+      position={[0, 0, 5]}
+      angle={0.45}
+      penumbra={1}
       intensity={100}
-      color="red"
+      color="white"
     />
     {/* bluish overhead lamp */}
     <spotLight
-      position={[4, 5, 4]}
-      angle={0.3}
+      position={[0, 0, 5]}
+      angle={0.6}
       penumbra={0.5}
-      intensity={40}
+      intensity={80}
       color="#4cc9f0"
     />
     {/* purplish side fill */}

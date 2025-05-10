@@ -31,7 +31,7 @@ const Experience = () => {
           // The card is the trigger element
           trigger: card,
           // Trigger the animation when the card is 80% down the screen
-          start: "top 80%",
+          start: "top 60%",
         },
       });
     });
