@@ -10,6 +10,7 @@ const ShowCaseSection = () => {
   const project1Ref = React.useRef(null);
   const project2Ref = React.useRef(null);
   const project3Ref = React.useRef(null);
+  const project4Ref = React.useRef(null);
 
   // callback function
   useGSAP(() => {
@@ -17,6 +18,7 @@ const ShowCaseSection = () => {
       project1Ref.current,
       project2Ref.current,
       project3Ref.current,
+      project4Ref.current,
     ];
 
     project.forEach((card, index) => {
@@ -80,22 +82,20 @@ const ShowCaseSection = () => {
           </div>
 
           {/* right */}
-          <div className="project-list-wrapper" ref={project2Ref}>
+          <div className="project-list-wrapper" ref={project1Ref}>
             <div className="image-wrapper bg-[#2D3240]">
               <img
-                src="/images/projek/lib.png"
+                src="/images/projek/rick.jfif"
                 alt="Library Management Platform"
               />
             </div>
             <div className="text-content">
-              <h2>Library Management Platform</h2>
+              <h2>Food Booking APp</h2>
               <p className="text-content">
-                A website for library that can be used to manage books and
-                users. Build with Next JS, Tailwind CSS, and Shadcn UI for
-                frontend. Postgresql and Drizzle ORM for backend.
+                This is a food booking app for ordering food. The app is used by users and sellers. Build with Flutter and Firebase.
               </p>
               <a
-                href="https://github.com/kodoktempur666/library.git"
+                href=""
                 className="project-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,7 +117,7 @@ const ShowCaseSection = () => {
               </a>
             </div>
           </div>
-          <div className="project-list-wrapper" ref={project3Ref}>
+          <div className="project-list-wrapper" ref={project2Ref}>
             <div className="image-wrapper bg-[#2D3240]">
               <img src="/images/projek/cell.png" alt="YC Directory" />
             </div>
@@ -155,9 +155,42 @@ const ShowCaseSection = () => {
 
         <div className="showcaselayout mt-10">
           {/* LEFT */}
-
+<div className="first-project-wrapper" ref={project3Ref}>
+            <div className="image-wrapper">
+              <img src="/images/projek/lib.png" alt="Ryde" />
+            </div>
+            <div className="text-content">
+              <h2>Library Management Platform</h2>
+              <p className="text-content">
+                A website for library that can be used to manage books and
+                users also book reservation. Build with Next JS, Tailwind CSS, and Shadcn UI for
+                frontend. Postgresql and Drizzle ORM for backend.
+              </p>
+              <a
+                href="https://github.com/kodoktempur666/library.git"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
+            </div>
+          </div>
           {/* right */}
-          <div className="project-list-wrapper" ref={project2Ref}>
+          <div className="project-list-wrapper" ref={project4Ref}>
             <div className="text-content">
               <h2>Subscription-API</h2>
               <p className="text-content">
