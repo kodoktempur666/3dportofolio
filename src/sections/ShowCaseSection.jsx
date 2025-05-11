@@ -90,7 +90,7 @@ const ShowCaseSection = () => {
               />
             </div>
             <div className="text-content">
-              <h2>Food Booking APp</h2>
+              <h2>Food Booking App</h2>
               <p className="text-content">
                 This is a food booking app for ordering food. The app is used by users and sellers. Build with Flutter and Firebase.
               </p>
