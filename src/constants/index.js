@@ -107,6 +107,34 @@ const techStackImgs = [
     name: "Project Manager",
     imgPath: "/images/logos/git.svg",
   },
+    {
+    name: "Project Manager",
+    imgPath: "/images/logos/php.svg",
+  },
+      {
+    name: "Project Manager",
+    imgPath: "/images/logos/mongodb.svg",
+  },
+      {
+    name: "Project Manager",
+    imgPath: "/images/logos/nextjs.png",
+  },
+      {
+    name: "Project Manager",
+    imgPath: "/images/logos/mysql.svg",
+  },
+      {
+    name: "Project Manager",
+    imgPath: "/images/logos/postgre.png",
+  },
+      {
+    name: "Project Manager",
+    imgPath: "/images/logos/images.png",
+  },
+        {
+    name: "Project Manager",
+    imgPath: "/images/logos/Flutter.svg",
+  },
 ];
 
 const techStackIcons = [

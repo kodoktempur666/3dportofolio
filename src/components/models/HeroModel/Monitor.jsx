@@ -10,7 +10,7 @@ import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 
 export function Monitor(props) {
-  const { nodes, materials } = useGLTF("/models/laptop.glb");
+  const { nodes, materials } = useGLTF("/models/monitor.glb");
   const screensRef = useRef();
 
   const chairMaterial = new THREE.MeshPhongMaterial({
