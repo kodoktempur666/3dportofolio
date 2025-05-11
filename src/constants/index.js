@@ -88,51 +88,51 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "React JS",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "Node JS",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "Three JS",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Git",
     imgPath: "/images/logos/git.svg",
   },
     {
-    name: "Project Manager",
+    name: "PHP",
     imgPath: "/images/logos/php.svg",
   },
       {
-    name: "Project Manager",
+    name: "Mongo DB",
     imgPath: "/images/logos/mongodb.svg",
   },
       {
-    name: "Project Manager",
+    name: "Next JS",
     imgPath: "/images/logos/nextjs.png",
   },
       {
-    name: "Project Manager",
+    name: "Mysql",
     imgPath: "/images/logos/mysql.svg",
   },
       {
-    name: "Project Manager",
+    name: "Postgres",
     imgPath: "/images/logos/postgre.png",
   },
       {
-    name: "Project Manager",
+    name: "JavaScript",
     imgPath: "/images/logos/images.png",
   },
         {
-    name: "Project Manager",
+    name: "Flutter",
     imgPath: "/images/logos/Flutter.svg",
   },
 ];
