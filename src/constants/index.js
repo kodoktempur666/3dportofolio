@@ -158,7 +158,7 @@ const techStackIcons = [
   },
   {
     name: "Node JS",
-    modelPath: "/models/node.glb",
+    modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, 0, 0],
   },
