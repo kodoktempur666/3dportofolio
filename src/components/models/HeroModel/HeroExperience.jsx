@@ -4,15 +4,15 @@ import React, { Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import HeroLights from "./HeroLights";
 import Particles from "./Particle";
-import { Monitor } from "./Monitor";
+import { Kop } from "./Kop-v1";
 
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <Canvas frameloop="demand" camera={{ position: [0, 0, 15], fov: 25 }}>
-
       <HeroLights />
       <Particles count={isMobile ? 40 : isTablet ? 60 : 100} />
 
@@ -26,15 +26,16 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2}
       />
 
-      <group
-        scale={isMobile ? 0.5 : 1}
-        position={[0, -2, 0]}
-        rotation={[0, -Math.PI / 4, 0]}
-      >
-        <Suspense fallback={null}>
-          <Monitor />
-        </Suspense>
-      </group>
+      <Suspense fallback={null}>
+        <group
+          scale={isMobile ? 0.5 : 1}
+          position={[0, -2, 0]}
+          rotation={[0, -Math.PI / 4, 0]}
+        >
+
+          <Kop />
+        </group>
+      </Suspense>
     </Canvas>
   );
 };

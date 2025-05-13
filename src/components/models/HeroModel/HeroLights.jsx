@@ -4,7 +4,7 @@ const HeroLights = () => (
   <>
     {/* lamp's light */}
     <spotLight
-      position={[-1, 3, 5]}
+      position={[6, 6, 5]}
       angle={0.45}
       penumbra={1}
       intensity={100}
@@ -12,7 +12,7 @@ const HeroLights = () => (
     />
 
     {/* subtle point light for atmospheric tone */}
-    <pointLight position={[0, 1, 0]} intensity={10} color="#49A7C9FF" />
+    <pointLight position={[0, 1, 0]} intensity={10} color="#53BBE0FF" />
     <pointLight position={[1, 2, -2]} intensity={10} color="#1A576EFF" />
   </>
 );
