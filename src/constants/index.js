@@ -1,28 +1,31 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Projects",
+    link: "#projects",
   },
   {
     name: "Education",
     link: "#education",
   },
   {
+    name: "Experience",
+    link: "#experience",
+  },
+  {
     name: "Skills",
     link: "#skills",
   },
-
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Full-Stack Developer", imgPath: "/images/ideas.svg" },
+  { text: "Quality Assurance", imgPath: "/images/concepts.svg" },
+  { text: "Performance Tester", imgPath: "/images/designs.svg" },
+  { text: "DevOps", imgPath: "/images/code.svg" },
+  { text: "Full-Stack Developer", imgPath: "/images/ideas.svg" },
+  { text: "Quality Assurance", imgPath: "/images/concepts.svg" },
+  { text: "Performance Tester", imgPath: "/images/designs.svg" },
+  { text: "DevOps", imgPath: "/images/code.svg" },
 ];
 
 const counterItems = [
@@ -63,7 +66,7 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/github.png",
   },
-    {
+  {
     imgPath: "/images/logos/supabase.png",
   },
 ];
@@ -107,31 +110,31 @@ const techStackImgs = [
     name: "Git",
     imgPath: "/images/logos/git.svg",
   },
-    {
+  {
     name: "PHP",
     imgPath: "/images/logos/php.svg",
   },
-      {
+  {
     name: "Mongo DB",
     imgPath: "/images/logos/mongodb.svg",
   },
-      {
+  {
     name: "Next JS",
     imgPath: "/images/logos/nextjs.png",
   },
-      {
+  {
     name: "Mysql",
     imgPath: "/images/logos/mysql.svg",
   },
-      {
+  {
     name: "Postgres",
     imgPath: "/images/logos/postgre.png",
   },
-      {
+  {
     name: "JavaScript",
     imgPath: "/images/logos/images.png",
   },
-        {
+  {
     name: "Flutter",
     imgPath: "/images/logos/Flutter.svg",
   },
@@ -168,44 +171,44 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
-    {
+  {
     name: "Next JS",
     modelPath: "/models/nextjs.glb",
     scale: 1,
     rotation: [0, 1, 0],
   },
-    {
+  {
     name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
-      {
+  {
     name: "PHP",
     modelPath: "/models/php.glb",
     scale: 0.8,
     rotation: [0, 1, 0],
   },
 
-          {
+  {
     name: "Flutter",
     modelPath: "/models/flutter.glb",
     scale: 2.5,
     rotation: [0, 0, 0],
   },
-            {
+  {
     name: "Mysql",
     modelPath: "/models/mysql.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
-              {
+  {
     name: "Postgres",
     modelPath: "/models/postgre.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
-                {
+  {
     name: "Three JS",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.06,
@@ -217,7 +220,7 @@ const expCards = [
   {
     review:
       "As a Research and Entrepreneurial University campus, Telkom University plays an active role in the development of technology, science, and arts based on technology and information. Producing various research & innovations that are beneficial to people's lives.",
-    imgPath: "/images/aa.png",
+    imgPath: "/images/telu-dark.png",
     logoPath: "/images/telu.png",
     title: "Software Engineering Major",
     date: "October 2022 - Present",
@@ -230,7 +233,7 @@ const expCards = [
   {
     review:
       "Hacktiv8 is a bootcamp or intensive training program that aims to transform beginners into work-ready digital talents, especially in the technology sector.",
-    imgPath: "/images/hacktiv8-dark.png",
+    imgPath: "/images/hacktiv8-dark-2.png",
     logoPath: "/images/hacktiv-logo.png",
     title: "Frontend React JS Bootcamp",
     date: "9 September 2022 - 31 December 2022",
@@ -240,7 +243,31 @@ const expCards = [
       "Building capstone projects with React.",
     ],
   },
+];
 
+const workExpCards = [
+  {
+    review:
+      "PT Ardata Digital Asia is a software house that builds custom web and mobile applications for various clients.",
+    title: "PT Ardata Digital Asia (Magang)",
+    role: "Programmer",
+    date: "Juli 2025 – Oktober 2025",
+    responsibilities: [
+      "Memperbaiki bug pada lapisan basis data.",
+      "Mengoptimalkan performa aplikasi React Native.",
+      "Mengembangkan aplikasi sesuai kebutuhan klien menggunakan Next.js, Laravel, dan React.",
+    ],
+  },
+  {
+    review:
+      "PT Luzie Berkah Mandiri is a digital marketing company providing CRM solutions for product and sales management.",
+    title: "PT Luzie Berkah Mandiri (Kontrak)",
+    role: "Frontend Web Developer",
+    date: "Oktober 2025 – Desember 2025",
+    responsibilities: [
+      "Mengembangkan frontend dan mengintegrasikannya dengan REST API untuk aplikasi CRM pengelolaan produk dan penjualan menggunakan Next.js.",
+    ],
+  },
 ];
 
 const expLogos = [
@@ -314,7 +341,7 @@ const socialImgs = [
     imgPath: "/images/linkedin.png",
     url: "https://www.linkedin.com/in/firman-maulana-320297252/",
   },
-    {
+  {
     name: "github",
     imgPath: "/images/github.png",
     url: "https://github.com/kodoktempur666",
@@ -327,6 +354,7 @@ export {
   logoIconsList,
   counterItems,
   expCards,
+  workExpCards,
   expLogos,
   testimonials,
   socialImgs,

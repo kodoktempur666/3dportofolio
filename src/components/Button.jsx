@@ -1,19 +1,24 @@
 import React from 'react'
 
-const Button = ({ text, className, id}) => {
+const Button = ({ text, className, id, href, download}) => {
+  const handleClick = (e) => {
+    if (href) return;
+    e.preventDefault()
+    const target = document.getElementById('counter')
+
+    if(target && id) {
+        const offset = window.innerHeight * .15
+
+        const top = target.getBoundingClientRect().top + window.scrollY - offset
+        window.scrollTo({ top, behavior: 'smooth' })
+    }
+  }
+
   return (
     <a 
-    onClick={(e) => {
-        e.preventDefault()
-        const target = document.getElementById('counter')
-
-        if(target && id) {
-            const offset = window.innerHeight * .15
-
-            const top = target.getBoundingClientRect().top + window.scrollY - offset
-            window.scrollTo({ top, behavior: 'smooth' })
-        }
-    }}
+    href={href || '#'}
+    download={download || undefined}
+    onClick={handleClick}
     className={`${className ?? ''} cta-wrapper`}>
         <div className='cta-button group'>
             <div className='bg-circle' />

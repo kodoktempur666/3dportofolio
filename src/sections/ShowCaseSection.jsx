@@ -42,7 +42,7 @@ const ShowCaseSection = () => {
   }, []);
 
   return (
-    <section id="work" ref={sectionRef} className="app-showcase">
+    <section id="projects" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
           {/* LEFT */}

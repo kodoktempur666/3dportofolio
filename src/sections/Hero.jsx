@@ -1,5 +1,5 @@
 import React from "react";
-import { words } from "../constants/index";
+import { words, socialImgs } from "../constants/index";
 import Button from "../components/Button";
 import HeroExperience from "../components/models/HeroModel/HeroExperience";
 import { useGSAP } from "@gsap/react";
@@ -20,60 +20,96 @@ const Hero = () => {
         stagger: 1,
         duration: 0.5,
         ease: "power4.out",
-      }
+      },
     );
   });
   return (
     <section id="hero" className="relative overflow-hidden">
-
-
       <div className="hero-layout">
         {/*LEFT: HERO CONTENT*/}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-          <div className="flex flex-col gap-7">
+        {/* pointer-events-none: teks tidak blokir drag canvas 3D */}
+        <header className="flex flex-col justify-center w-full md:px-20 px-5 relative z-20 pointer-events-none">
+          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 max-w-2xl">
+            {/* Badge status */}
+            <div className="hero-badge">
+              <span className="hero-badge-dot"></span>
+              Available for Work
+            </div>
+
+            {/* Greeting */}
+            <div className="hero-greeting">
+              <p className="text-white-50 text-base md:text-lg font-medium tracking-wide">
+                Hello, I'm
+              </p>
+              <h2 className="hero-name">Firman Maulana</h2>
+            </div>
+
+            {/* Title slider */}
             <div className="hero-text">
               <h1>
-                Shaping
+                As
                 <span className="slide">
                   <span className="wrapper">
-                    {words.map((word) => (
+                    {words.map((word, index) => (
                       <span
-                        key={word.text}
+                        key={`${word.text}-${index}`}
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
-                        <img
-                          src={word.imgPath}
-                          alt={word.text}
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
-                        />
                         <span>{word.text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
               </h1>
-
-              <h1>Into Real Projects</h1>
             </div>
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Firman, a developer based in Indonesia. I'm passionate
-              about building web apps and mobile apps.
+
+            {/* Description */}
+            <p className="text-white-50 md:text-lg text-sm sm:text-base leading-relaxed max-w-xl">
+              Passionate about building high-quality, reliable, and scalable web
+              applications. Specializing in load testing with K6, API testing
+              with Postman, and performance monitoring with Grafana &amp;
+              Prometheus.
             </p>
-            <Button
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="button"
-              text="See My Work"
-            />
+
+            {/* Action buttons — pointer-events-auto agar tetap bisa diklik */}
+            <div className="flex flex-wrap gap-8 sm:gap-3 md:gap-4 pt-1 pointer-events-auto">
+              <Button
+                className="md:w-80 md:h-16 w-full sm:w-60 h-12"
+                text="View My Projects"
+                href="#projects"
+              />
+              <Button
+                className="md:w-80 md:h-16 w-full sm:w-60 h-12"
+                text="Download CV"
+                href="/Firman_Maulana_CV_ID.pdf"
+                download="Firman_Maulana_CV_ID.pdf"
+              />
+            </div>
+
+            {/* Social links — pointer-events-auto agar tetap bisa diklik */}
+            <div className="hero-socials pointer-events-auto">
+              {socialImgs.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-social-icon"
+                  aria-label={social.name}
+                >
+                  <img src={social.imgPath} alt={social.name} />
+                </a>
+              ))}
+            </div>
           </div>
         </header>
 
-        {/*RIGHT: HERO CONTENT*/}
-        <figure>
+        {/*RIGHT: 3D MODEL — z-index di bawah teks, tapi menerima pointer events */}
+        <figure className="hero-3d-figure">
           <div className="hero-3d-layout">
             <HeroExperience />
           </div>
         </figure>
-
       </div>
       <ProjectsTitle />
     </section>
