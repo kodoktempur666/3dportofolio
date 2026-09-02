@@ -69,6 +69,12 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/supabase.png",
   },
+    {
+    imgPath: "/images/logos/kubernetes.png",
+  },
+    {
+    imgPath: "/images/logos/docker.svg",
+  },
 ];
 
 const abilities = [
@@ -348,6 +354,12 @@ const socialImgs = [
   },
 ];
 
+const projectList = [
+  {
+
+  }
+]
+
 export {
   words,
   abilities,
@@ -361,4 +373,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projectList
 };
