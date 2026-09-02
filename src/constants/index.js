@@ -255,23 +255,26 @@ const workExpCards = [
   {
     review:
       "PT Ardata Digital Asia is a software house that builds custom web and mobile applications for various clients.",
-    title: "PT Ardata Digital Asia (Magang)",
+    title: "PT Ardata Digital Asia (Internship)",
     role: "Programmer",
-    date: "Juli 2025 – Oktober 2025",
+    date: "July 2025 – October 2025",
     responsibilities: [
-      "Memperbaiki bug pada lapisan basis data.",
-      "Mengoptimalkan performa aplikasi React Native.",
-      "Mengembangkan aplikasi sesuai kebutuhan klien menggunakan Next.js, Laravel, dan React.",
+      "Fixed bugs in database schemas containing thousands of records.",
+      "Optimized rendering performance in React Native applications.",
+      "Developed applications according to client requirements using Next.js, Laravel, and React.",
     ],
   },
   {
     review:
       "PT Luzie Berkah Mandiri is a digital marketing company providing CRM solutions for product and sales management.",
-    title: "PT Luzie Berkah Mandiri (Kontrak)",
+    title: "PT Luzie Berkah Mandiri (Contract)",
     role: "Frontend Web Developer",
-    date: "Oktober 2025 – Desember 2025",
+    date: "October 2025 – December 2025",
     responsibilities: [
-      "Mengembangkan frontend dan mengintegrasikannya dengan REST API untuk aplikasi CRM pengelolaan produk dan penjualan menggunakan Next.js.",
+      "Built a modern, responsive, and scalable user interface using Next.js with a component-based architecture.",
+      "Integrated the frontend with backend services (REST API) to manage customer data, transactions, and business workflows in real-time.",
+      "Developed interactive dashboards to visualize customer insights, sales analytics, and business reports.",
+      "Developed reusable UI components such as forms, tables, modals, and other components to ensure UI consistency and improve development efficiency."
     ],
   },
 ];
