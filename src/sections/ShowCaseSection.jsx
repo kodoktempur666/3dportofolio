@@ -15,6 +15,7 @@ const ShowCaseSection = () => {
   const project6Ref = React.useRef(null);
   const project7Ref = React.useRef(null);
   const project8Ref = React.useRef(null);
+  const project9Ref = React.useRef(null);
 
   // callback function
   useGSAP(() => {
@@ -27,6 +28,7 @@ const ShowCaseSection = () => {
       project6Ref.current,
       project7Ref.current,
       project8Ref.current,
+      project9Ref.current,
     ];
 
     project.forEach((card, index) => {
@@ -165,7 +167,6 @@ const ShowCaseSection = () => {
         <div className="showcaselayout mt-10">
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project4Ref}>
-
             <div className="text-content">
               <h2 className="text-content">
                 Eduline{" "}
@@ -175,7 +176,6 @@ const ShowCaseSection = () => {
                 Backend API with Express.js and PostgreSQL for tutoring session
                 scheduling and mentor payroll management.
               </p>
-
             </div>
           </div>
           {/* right */}
@@ -210,10 +210,51 @@ const ShowCaseSection = () => {
               </a>
             </div>
           </div>
+          <div className="project-list-wrapper" ref={project6Ref}>
+            <div className="text-content">
+              <h2 className="text-content">
+                Performance Test{" "}
+                <h1 className="text-xl font-bold">(Thesis Project)</h1>
+              </h2>
+
+              <p className="text-content mt-4">
+                Research project for analyzing and optimizing the performance of
+                Express.js and Fastify REST APIs under high concurrent request
+                conditions. The benchmark uses an e-commerce API scenario with
+                PostgreSQL, Redis, BullMQ, k6, Prometheus, and Grafana to
+                evaluate latency, throughput, error rate, and server
+                performance.
+              </p>
+
+              <a
+                href="https://github.com/kodoktempur666/performance-test-thesis-express-fastify"
+                className="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>See The Project</span>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          
         </div>
         <div className="showcaselayout mt-10">
           {/* LEFT */}
-          <div className="first-project-wrapper" ref={project6Ref}>
+          <div className="first-project-wrapper" ref={project7Ref}>
             <div className="text-content">
               <h2>
                 CRM Order Management{" "}
@@ -230,7 +271,7 @@ const ShowCaseSection = () => {
           </div>
 
           {/* right */}
-          <div className="project-list-wrapper" ref={project7Ref}>
+          <div className="project-list-wrapper" ref={project8Ref}>
             <div className="text-content">
               <h2>
                 Profile Website{" "}
@@ -266,7 +307,7 @@ const ShowCaseSection = () => {
               </a>
             </div>
           </div>
-          <div className="project-list-wrapper" ref={project8Ref}>
+          <div className="project-list-wrapper" ref={project9Ref}>
             <div className="text-content">
               <h2>
                 POS Laundry{" "}
