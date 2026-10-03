@@ -7,6 +7,7 @@ import FeatureCards from './sections/FeatureCards'
 import Experience from './sections/Experience'
 import TechStack from './sections/TechStack'
 import Footer from './components/Footer'
+import AdBanner from './components/Adbanner'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <FeatureCards />
         <Experience />
         <TechStack />
+        <AdBanner />
         <Footer />
     </>
   )
